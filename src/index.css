@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.primaryBtn{
+    background-color: #09CEFF;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+    font-weight: 500;
+
+}
+.primaryBtn:hover{
+    color: white;
+    background-color: rgb(62, 156, 245);
+    transition: 0.4s;
+}
