@@ -13,7 +13,7 @@ const My_skills = () => {
   return (
     <section className="py-12">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8 text-[#09CEFF]">
+        <h2 className=" uppercase text-3xl font-bold text-center mb-8 text-[#09CEFF]">
           Skills
         </h2>
 
