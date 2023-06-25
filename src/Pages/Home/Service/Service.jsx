@@ -8,21 +8,21 @@ const Service = () => {
       icon: <FiCode className="text-white text-4xl" />,
       title: "Web Development",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper metus euismod tellus aliquam, vitae.",
+        "Expert web development services to create stunning websites that captivate and engage your audience.",
     },
     {
       _id: 2,
       icon: <FiLayout className="text-white text-4xl" />,
       title: "UI/UX Design",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper metus euismod tellus aliquam, vitae.",
+        "Custom web development solutions for a seamless online presence that drives results.",
     },
     {
       _id: 3,
       icon: <FiServer className="text-white text-4xl" />,
       title: "Backend Development",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper metus euismod tellus aliquam, vitae.",
+        "Robust backend development solutions for powering scalable and secure web applications with optimal performance.",
     },
   ];
   return (
