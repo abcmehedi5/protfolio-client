@@ -3,15 +3,47 @@ import { EffectCoverflow, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Gallery = () => {
+  const slideImage = [
+    {
+      _id: "1",
+      image:
+        "https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg",
+    },
+    {
+      _id: "2",
+      image:
+        "https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg",
+    },
+    {
+      _id: "4",
+      image:
+        "https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg",
+    },
+    {
+      _id: "3",
+      image:
+        "https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg",
+    },
+    {
+      _id: "5",
+      image:
+        "https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg",
+    },
+    {
+      _id: "6",
+      image:
+        "https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg",
+    },
+  ];
+
   return (
     <section
       className="bg-slate-600 py-8 text-center"
-      data-aos="flip-up"
+    >
+      <div className="container mx-auto" data-aos="flip-up"
       data-aos-easing="ease-in-out"
       data-aos-mirror="true"
-      data-aos-duration="2000"
-    >
-      <div className="container mx-auto">
+      data-aos-duration="2000">
         <h2 className=" uppercase text-3xl font-bold text-center mb-4 text-[#09CEFF]">
           Our gallery
         </h2>
@@ -39,55 +71,11 @@ const Gallery = () => {
           modules={[EffectCoverflow, Pagination]}
           className="mySwiper mt-10"
         >
-          <SwiperSlide>
-            <img
-              src="https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg"
-              alt=""
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <img
-              src="https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg"
-              alt=""
-            />
-          </SwiperSlide>
+          {slideImage.map((img) => (
+            <SwiperSlide>
+              <img className="w-full h-[200px]" src={img.image} alt="" />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>

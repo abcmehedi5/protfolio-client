@@ -5,12 +5,8 @@ const Contact = () => {
     <section
       id="contact-section"
       className="py-12 "
-      data-aos="flip-up"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-duration="700"
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto" >
         <div className="md:w-1/2 mx-auto mb-10 text-center">
           <h2 className="uppercase text-3xl font-bold text-[#09CEFF] mb-4">
             Contact Me
