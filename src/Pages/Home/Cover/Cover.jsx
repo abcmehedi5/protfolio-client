@@ -1,5 +1,6 @@
 import React from "react";
 import cover from "../../../assets/cover.png";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa6";
 
 const Cover = () => {
   return (
@@ -33,6 +34,29 @@ const Cover = () => {
                 Hire Me
               </a>
             </button>
+          </div>
+          <div className="flex gap-10 pt-8">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/mehedifb1/"
+              className="link link-hover"
+            >
+              <FaFacebook size={30} />
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/abcmehedi5"
+              className="link link-hover"
+            >
+              <FaGithub size={30} />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/mehedilinkdin/"
+              className="link link-hover"
+            >
+              <FaLinkedin size={30} />
+            </a>
           </div>
         </div>
         <div>

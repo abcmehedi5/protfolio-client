@@ -6,7 +6,7 @@ const ProjectDetails = () => {
   const projectID = useParams();
   console.log(project);
   useEffect(() => {
-    fetch(`http://localhost:5000/project/${projectID.id}`)
+    fetch(`https://protfolio-server-abcmehedi5.vercel.app/project/${projectID.id}`)
       .then((res) => res.json())
       .then((data) => setProject(data));
   }, []);
