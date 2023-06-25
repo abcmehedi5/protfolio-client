@@ -26,7 +26,7 @@ const Service = () => {
     },
   ];
   return (
-    <section className="bg-gray-100 py-12">
+    <section className="py-12">
      
         <h2 className=" uppercase text-3xl font-bold text-center mb-4 text-[#09CEFF]">
           Services
