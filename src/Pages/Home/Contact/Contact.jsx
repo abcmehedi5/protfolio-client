@@ -3,6 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <section
+      id="contact-section"
       className="py-12 "
       data-aos="flip-up"
       data-aos-easing="ease-in-out"

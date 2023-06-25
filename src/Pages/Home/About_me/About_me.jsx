@@ -2,7 +2,7 @@ import React from "react";
 import cover from "../../../assets/cover.png";
 const About_me = () => {
   return (
-    <section  className="bg-slate-600 "
+    <section id="about-section" className="bg-slate-600 "
     
     data-aos="flip-up"
     data-aos-easing="ease-in-out"

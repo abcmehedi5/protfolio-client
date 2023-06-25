@@ -12,6 +12,7 @@ import {
 const My_skills = () => {
   return (
     <section
+    id="skills-section"
       className="py-12"
       data-aos="zoom-in"
       data-aos-easing="ease-in-out"

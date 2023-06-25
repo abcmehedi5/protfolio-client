@@ -15,3 +15,14 @@
     background-color: rgb(62, 156, 245);
     transition: 0.4s;
 }
+
+/* section {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+  }
+  
+  section:target {
+    height: auto;
+  } */
+  

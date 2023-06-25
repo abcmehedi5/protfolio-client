@@ -10,7 +10,7 @@ const Projects = () => {
       });
   });
   return (
-    <section className="bg-slate-600 py-12">
+    <section className="bg-slate-600 py-12" id="projects-section">
       <div className="container mx-auto">
         <h2 className="uppercase text-3xl font-bold text-center mb-4 text-[#09CEFF]">
           Projects

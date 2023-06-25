@@ -29,16 +29,16 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <a href="#about-section">About</a>
             </li>
             <li>
-              <Link to="/skills">Skills</Link>
+              <a href="#skills-section">Skills</a>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <a href="#projects-section">Projects</a>
             </li>
             <li>
-              <Link to="/contacts">Contacts</Link>
+              <a href="#contact-section">Contacts</a>
             </li>
           </ul>
         </div>
@@ -50,16 +50,16 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <a href="#about-section">About</a>
           </li>
           <li>
-            <Link to="/skills">Skills</Link>
+            <a href="#skills-section">Skills</a>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <a href="#projects-section">Projects</a>
           </li>
           <li>
-            <Link to="/contacts">Contacts</Link>
+            <a href="#contact-section">Contacts</a>
           </li>
         </ul>
       </div>
