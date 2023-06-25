@@ -1,5 +1,6 @@
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
+import { Link } from "react-router-dom";
 const Projects_card = ({ project }) => {
   const {
     _id,
@@ -19,7 +20,7 @@ const Projects_card = ({ project }) => {
           alt={title}
         />
         <h3 className="text-xl font-semibold mb-2 mt-2">{title}</h3>
-        <p className=" text-gray-400 mb-4">{description}</p>
+        <p className=" text-gray-400 mb-4">{description.slice(0 ,80)}...</p>
         <hr />
         <div className="flex justify-between mt-6">
           <a
@@ -49,7 +50,9 @@ const Projects_card = ({ project }) => {
             </a>
           </div>
         </div>
-        <button className="primaryBtn w-full mt-4">Details</button>
+        <Link to={"/project/" + _id}>
+          <button className="primaryBtn w-full mt-4">Details</button>
+        </Link>
       </div>
     </div>
   );
