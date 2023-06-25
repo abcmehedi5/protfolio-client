@@ -11,7 +11,13 @@ import {
 } from "react-icons/di";
 const My_skills = () => {
   return (
-    <section className="py-12">
+    <section
+      className="py-12"
+      data-aos="zoom-in"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-duration="1000"
+    >
       <div className="container mx-auto">
         <h2 className=" uppercase text-3xl font-bold text-center mb-8 text-[#09CEFF]">
           Skills

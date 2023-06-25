@@ -4,14 +4,21 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const Gallery = () => {
   return (
-    <section className="bg-slate-600 py-8 text-center">
+    <section
+      className="bg-slate-600 py-8 text-center"
+      data-aos="flip-up"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-duration="2000"
+    >
       <div className="container mx-auto">
-
         <h2 className=" uppercase text-3xl font-bold text-center mb-4 text-[#09CEFF]">
-        Our gallery
+          Our gallery
         </h2>
         <p className="w-3/4 mx-auto">
-        Explore our captivating gallery showcasing stunning visuals and creative designs. Get inspired and discover the possibilities for your next project.
+          Explore our captivating gallery showcasing stunning visuals and
+          creative designs. Get inspired and discover the possibilities for your
+          next project.
         </p>
 
         <Swiper

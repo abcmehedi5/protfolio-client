@@ -2,7 +2,13 @@ import React from "react";
 import cover from "../../../assets/cover.png";
 const About_me = () => {
   return (
-    <section className="bg-slate-600">
+    <section  className="bg-slate-600 "
+    
+    data-aos="flip-up"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-duration="1000"
+    >
       <div className=" grid grid-cols-1 md:grid-cols-2 items-center container mx-auto ">
         <div>
           <img className="w-full md:w-[600px] mx-auto" src={cover} alt="" />

@@ -12,7 +12,10 @@ const Projects_card = ({ project }) => {
     image,
   } = project;
   return (
-    <div className="relative group ">
+    <div className="relative group  "  data-aos="flip-up"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-duration="1000">
       <div className="bg-black hover:bg-slate-800 shadow-lg rounded-lg p-6">
         <img
           className="w-full h-[200px] rounded-lg mt-4 cursor-pointer transform transition-transform hover:scale-105"

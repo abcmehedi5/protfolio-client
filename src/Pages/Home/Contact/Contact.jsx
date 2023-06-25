@@ -2,14 +2,21 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="py-12">
+    <section
+      className="py-12 "
+      data-aos="flip-up"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-duration="700"
+    >
       <div className="container mx-auto">
         <div className="md:w-1/2 mx-auto mb-10 text-center">
           <h2 className="uppercase text-3xl font-bold text-[#09CEFF] mb-4">
             Contact Me
           </h2>
           <p className="text-white">
-          Let's connect and discuss your web development needs. Get in touch with us for personalized and innovative solutions.
+            Let's connect and discuss your web development needs. Get in touch
+            with us for personalized and innovative solutions.
           </p>
         </div>
 
