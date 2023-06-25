@@ -8,7 +8,7 @@ const About_me = () => {
           <img className="w-full md:w-[600px] mx-auto" src={cover} alt="" />
         </div>
         <div className="space-y-4">
-          <h2 className="text-5xl font-bold uppercase">About Me</h2>
+          <h2 className="text-5xl font-bold uppercase text-[#09CEFF]">About Me</h2>
           <h4 className="text-2xl font-bold uppercase">Mern stack Developer</h4>
           <p className="text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus

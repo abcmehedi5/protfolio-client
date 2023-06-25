@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section className="py-12">
       <div className="container mx-auto">
-      <div className="md:w-1/2 mx-auto mb-10 text-center">
+        <div className="md:w-1/2 mx-auto mb-10 text-center">
           <h2 className="uppercase text-3xl font-bold text-[#09CEFF] mb-4">
             Contact Me
           </h2>
@@ -70,8 +70,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-
-      
     </section>
   );
 };
