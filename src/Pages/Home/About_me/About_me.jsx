@@ -11,12 +11,7 @@ const About_me = () => {
           <h2 className="text-5xl font-bold uppercase text-[#09CEFF]">About Me</h2>
           <h4 className="text-2xl font-bold uppercase">Mern stack Developer</h4>
           <p className="text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-            molestiae dolores commodi, voluptatem similique culpa quisquam
-            consectetur cupiditate doloremque eligendi mollitia velit aperiam
-            inventore atque architecto est numquam laudantium necessitatibus
-            maiores facilis iure provident possimus! Nemo ipsa tenetur
-            consequuntur dolores.
+          Hi, I'm Mehedi Hassan, a MERN Stack Developer. I have experience in JavaScript, React.js, Node.js, Express.js, Mongo DB, and other related technologies. I am dedicated to solving problems and strive to complete tasks efficiently. I am constantly learning new skills to stay updated and improve my full-stack development capabilities in the future.
           </p>
           <button className="btn btn-outline btn-info ">Learn More</button>
         </div>

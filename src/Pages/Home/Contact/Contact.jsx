@@ -9,8 +9,7 @@ const Contact = () => {
             Contact Me
           </h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            fringilla, enim a ullamcorper interdum, mi lorem consectetur risus.
+          Let's connect and discuss your web development needs. Get in touch with us for personalized and innovative solutions.
           </p>
         </div>
 

@@ -11,10 +11,7 @@ const Gallery = () => {
         Our gallery
         </h2>
         <p className="w-3/4 mx-auto">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga iure
-          voluptatibus ipsam asperiores maiores consequuntur fugiat! Laboriosam
-          assumenda voluptatum soluta non. Reprehenderit ipsum fuga doloribus
-          quibusdam! Rerum natus aut blanditiis?
+        Explore our captivating gallery showcasing stunning visuals and creative designs. Get inspired and discover the possibilities for your next project.
         </p>
 
         <Swiper
