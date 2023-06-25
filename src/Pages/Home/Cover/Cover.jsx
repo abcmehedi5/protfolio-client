@@ -12,14 +12,27 @@ const Cover = () => {
             And i'm a Mern stack Developer
           </h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
-            eligendi rerum dicta vero quaerat officiis deleniti aperiam harum
-            non quo?
+            An experienced web developer is proficient in HTML, CSS, JavaScript,
+            Node.js, Express, Tailwind, Bootstrap, and more. Crafting
+            exceptional websites with a passion for seamless user experiences.
           </p>
           <div className="flex gap-10">
-            {/* <button className="p-3 rounded-md text-black font-bold hover:bg-sky-700 hover:text-white bg-[#09CEFF] ">Download Resume</button> */}
-            <button className="primaryBtn">Download Resume</button>
-            <button className="btn btn-outline btn-info">Hire Me</button>
+            <button className="primaryBtn">
+              <a
+                href="/Mehedi_Hassan_Resume.pdf"
+                download="Mehedi_Hassan_Resume.pdf"
+              >
+                Download Resume
+              </a>
+            </button>
+            <button className="btn btn-outline btn-info">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/mehedilinkdin/"
+              >
+                Hire Me
+              </a>
+            </button>
           </div>
         </div>
         <div>
