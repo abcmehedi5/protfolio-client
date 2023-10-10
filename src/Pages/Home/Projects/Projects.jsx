@@ -3,12 +3,12 @@ import Projects_card from "./Projects_card";
 const Projects = () => {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
-    fetch("https://protfolio-server-abcmehedi5.vercel.app/project")
+    fetch("http://localhost:3000/projects")
       .then((res) => res.json())
       .then((data) => {
-        setProjects(data);
+        setProjects(data?.projectData);
       });
-  });
+  },[]);
   return (
     <section className="bg-slate-600 py-12" id="projects-section">
       <div className="container mx-auto">
