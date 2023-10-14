@@ -61,6 +61,9 @@ const Navbar = () => {
           <li>
             <a href="#contact-section">Contacts</a>
           </li>
+          <li>
+            <Link to={"/admin-dashboard"}>Admin</Link>
+          </li>
         </ul>
       </div>
       <div className="navbar-end">
