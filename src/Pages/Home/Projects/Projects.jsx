@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import Projects_card from "./Projects_card";
 import { useGetProjectsQuery } from "../../../Redux/features/api/baseAPI";
 const Projects = () => {

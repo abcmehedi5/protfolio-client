@@ -1,15 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useGetSingleProjectQuery } from "../../../Redux/features/api/baseAPI";
 
 const ProjectDetails = () => {
-  const [project, setProject] = useState({});
   const projectID = useParams();
-  console.log(project);
-  useEffect(() => {
-    fetch(`http://localhost:3000/projects/${projectID.id}`)
-      .then((res) => res.json())
-      .then((data) => setProject(data));
-  }, []);
+  const { data: project } = useGetSingleProjectQuery(projectID);
 
   const [showFullDescription, setShowFullDescription] = useState(false);
 
@@ -21,12 +16,12 @@ const ProjectDetails = () => {
     <section className="py-12 bg-slate-600">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8 text-[#09CEFF]">
-          {project.title}
+          {project?.title}
         </h2>
         <div className="flex flex-col gap-10 md:flex-row items-center">
           <div className="md:w-1/2">
             <img
-              src={project.image}
+              src={project?.image}
               alt="Project Photo"
               className="w-full mb-4 h-[350px]"
             />
@@ -35,8 +30,8 @@ const ProjectDetails = () => {
             <p className="text-white text-justify mb-4">
               {showFullDescription
                 ? project?.description
-                : `${project.description?.slice(0, 600)} `}
-              {project.description && project.description?.length > 600 && (
+                : `${project?.description?.slice(0, 600)} `}
+              {project?.description && project?.description?.length > 600 && (
                 <span
                   className="link text-blue-500"
                   onClick={toggleDescription}
@@ -47,7 +42,7 @@ const ProjectDetails = () => {
             </p>
             <div className="flex mb-4 mt-10">
               <a
-                href={project.githubClient}
+                href={project?.githubClient}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mr-4 text-white hover:text-gray-400 primaryBtn"
@@ -55,7 +50,7 @@ const ProjectDetails = () => {
                 GitHub (Client)
               </a>
               <a
-                href={project.githubServer}
+                href={project?.githubServer}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mr-4 text-white hover:text-gray-400 primaryBtn "
@@ -63,7 +58,7 @@ const ProjectDetails = () => {
                 GitHub (Server)
               </a>
               <a
-                href={project.liveLink}
+                href={project?.liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-400 primaryBtn"
