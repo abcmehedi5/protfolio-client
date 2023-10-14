@@ -10,5 +10,5 @@ const baseApi = createApi({
   }),
 });
 
-const { useGetProjectsQuery } = baseApi;
+export const { useGetProjectsQuery } = baseApi;
 export default baseApi;
